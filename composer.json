@@ -1,0 +1,24 @@
+{
+    "name": "yii3ds/yii2-3ds-shoppinglists-module",
+    "description": "this module management shoppinglists on your website",
+    "type": "yii2-extension",
+    "keywords": ["yii2","yii3ds","shoppinglists"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "ton3ds",
+            "email": "nopparid@3dsinteractive.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yii3ds\\shoppinglists\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "yii3ds\\shoppinglists\\Bootstrap"
+    }
+}
