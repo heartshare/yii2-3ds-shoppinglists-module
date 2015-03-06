@@ -11,9 +11,9 @@ use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 
 /**
- * Class Product
+ * Class Shoppinglists
  * @package yii3ds\shoppinglists\models
- * Product model.
+ * Shoppinglists model.
  *
  * @property integer $id ID
  * @property string $title_th Title Thai
@@ -23,9 +23,9 @@ use yii\db\ActiveRecord;
  * @property string $imageThumb Image
  * @property integer $created_at Created time
  * @property integer $create_user User who create this event
- * @property integer $event_type_id Product type
+ * @property integer $event_type_id Shoppinglists type
  */
-class Product extends ActiveRecord
+class Shoppinglists extends ActiveRecord
 {
     use ModuleTrait;
 
@@ -43,7 +43,7 @@ class Product extends ActiveRecord
      */
     public static function find()
     {
-        return new ProductQuery(get_called_class());
+        return new ShoppinglistsQuery(get_called_class());
     }
 
     /**

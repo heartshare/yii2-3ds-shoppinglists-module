@@ -18,6 +18,7 @@ class Bootstrap implements BootstrapInterface
         // Add module URL rules.
         $app->getUrlManager()->addRules(
             [
+                'POST <_m:shoppinglists>' => '<_m>/default/index',
                 'POST <_m:shoppinglists>/<id:\d+>' => '<_m>/default/index',
                 '<_m:shoppinglists>' => '<_m>/default/index',
                 '<_m:shoppinglists>/<id:\d+>' => '<_m>/default/index',

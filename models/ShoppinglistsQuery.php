@@ -1,15 +1,15 @@
 <?php
 
-namespace yii3ds\products\models;
+namespace yii3ds\shoppinglists\models;
 
 use vova07\users\traits\ModuleTrait;
 use yii\db\ActiveQuery;
 
 /**
- * Class ProductQuery
+ * Class ShoppinglistsQuery
  * @package yii3ds\event\models
  */
-class ProductQuery extends ActiveQuery
+class ShoppinglistsQuery extends ActiveQuery
 {
     use ModuleTrait;
 
